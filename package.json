@@ -1,0 +1,22 @@
+{
+  "name": "testesautomatizados",
+  "description": "Mentoria",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "cypress": "^14.5.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pamela-Neris/testesautomatizados.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pamela-Neris/testesautomatizados/issues"
+  },
+  "homepage": "https://github.com/Pamela-Neris/testesautomatizados#readme"
+}
