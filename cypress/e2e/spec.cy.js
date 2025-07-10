@@ -8,8 +8,8 @@ describe('Página de Login', () => {
   it('deve mostrar erro para credenciais vazias', () => {
     cy.visit('https://front.serverest.dev/login');
     cy.get('button[type="submit"]').click();
-    cy.contains('O campo email é obrigatório').should('exist');
-    cy.contains('O campo senha é obrigatório').should('exist');
+    cy.contains('Email não pode ficar em branco').should('exist');
+    cy.contains('Password não pode ficar em branco').should('exist');
   });
 
   it('deve mostrar erro para credenciais inválidas', () => {
@@ -17,7 +17,8 @@ describe('Página de Login', () => {
     cy.get('input[name="email"]').type('usuario@invalido.com');
     cy.get('input[name="password"]').type('senhaerrada');
     cy.get('button[type="submit"]').click();
-    cy.contains('Email ou senha inválidos').should('exist');
+    cy.contains('Email deve ser um email válido').should('exist');
+    cy.contains('Email e/ou senha inválidos').should('exist');
   });
 
   // Adicione outros cenários conforme necessário
